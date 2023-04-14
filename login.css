@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-green: #4caf50;
+  --darkish-green: #3e8e41;
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("./img/Forest_Sunlight_Background-954.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--light-green);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group button:hover {
+  background-color: var(--darkish-green);
+}
+.form-group button:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-image: url("./img/logo-.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.forgot-pass {
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.register-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+.forgot-pass,
+.register-link a {
+  color: var(--light-green);
+  text-decoration: none;
+}
+.forgot-pass:hover,
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* media query */
+@media only screen and (max-width: 576px) {
+  .login-form {
+    padding: 20px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+    height: 40px;
+  }
+  .forgot-pass {
+    font-size: 14px;
+  }
+  .register-link {
+    font-size: 14px;
+  }
+  button {
+    height: 40px;
+    font-size: 16px;
+  }
+}
