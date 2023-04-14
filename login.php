@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/5ad1518180.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,9 +17,15 @@
             <form action="/login" method="post">
                 <div class="form-group">
                     <input type="text" id="username" name="username" placeholder="Username" required>
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
                 </div>
                 <div class="form-group">
                     <input type="password" id="password" name="password" placeholder="Password" required>
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
                 </div>
                 <a class="forgot-pass" href="/register">Forgot Password</a>
                 <div class="form-group">
