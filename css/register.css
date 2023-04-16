@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-green: #4caf50;
+  --darkish-green: #3e8e41;
+  --white: #fff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+/* Main wrapper */
+.registration-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Logo */
+.background {
+  width: 60%;
+  height: 100vh;
+  background-image: url("/img/logo-.png");
+  /* background-size: cover; */
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  background-color: var(--light-green);
+}
+
+/* Registration form */
+.registration-form {
+  width: 40%;
+  /* padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 0px 40px 0px;
+  background-color: var(--white);
+}
+.registration-form h2 {
+  font-size: 1.5rem;
+  color: var(--darkish-green);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 1px solid var(--light-green);
+}
+
+.form-group.terms-and-conditions {
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.form-group.terms-and-conditions a {
+  color: var(--light-green);
+  text-decoration: none;
+}
+
+.form-group.terms-and-conditions a:hover {
+  text-decoration: underline;
+}
+
+.button-container button {
+  display: block;
+  background-color: var(--light-green);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.button-container button:hover {
+  background-color: var(--darkish-green);
+}
+.button-container button:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}
+
+/* Media queries for tablet */
+@media only screen and (max-width: 768px) {
+  .registration-wrapper {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .background {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .registration-form {
+    width: 100%;
+    padding: 50px;
+  }
+}

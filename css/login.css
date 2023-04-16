@@ -14,7 +14,7 @@ body {
       rgba(255, 255, 255, 0.15),
       rgba(255, 255, 255, 0.15)
     ),
-    url("./img/Forest_Sunlight_Background-954.jpg");
+    url("/img/Forest_Sunlight_Background-954.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .login-form {
@@ -97,7 +97,7 @@ body {
   margin: 0 auto;
   width: 150px;
   height: 150px;
-  background-image: url("./img/logo-.png");
+  background-image: url("/img/logo-.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -128,6 +128,7 @@ body {
 @media only screen and (max-width: 576px) {
   .login-form {
     padding: 20px;
+    width: 60%;
   }
 
   .form-group input {

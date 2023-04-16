@@ -1,5 +1,6 @@
 /* reset default margin and padding */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +20,7 @@ body {
       rgba(255, 255, 255, 0.15),
       rgba(255, 255, 255, 0.15)
     ),
-    url("./img/Forest_Sunlight_Background-954.jpg");
+    url("/img/Forest_Sunlight_Background-954.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 /* title */
@@ -42,6 +43,7 @@ h1 {
   font-weight: 800;
   color: var(--green);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  line-height: 0.9;
 }
 h1,
 h2 {
@@ -49,7 +51,7 @@ h2 {
   font-style: normal;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 1rem;
   color: var(--dark_green);
@@ -65,7 +67,8 @@ h2 {
 .btn-login,
 .btn-register {
   text-align: center;
-  width: 5rem;
+  font-size: 0.9rem;
+  width: 8rem;
   padding: 1rem 2rem;
   border-radius: 2.5rem;
   color: var(--white);
@@ -101,22 +104,31 @@ h2 {
   transform: scale(0.93);
 }
 
-/* media query */
-@media screen and (max-width: 768px) {
-  .title {
-    font-size: 2rem;
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    margin-top: 30px;
   }
 
   .btn-login,
   .btn-register {
-    padding: 0.8rem 1.6rem;
-    font-size: 0.8rem;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .title {
-    font-size: 1.5rem;
+  h2 {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
   }
 
   .btn-login,
