@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div class="container">
         <h1>Forestry</h1>
         <h2>Services</h2>
@@ -21,7 +20,6 @@
             <a href="register.php" class="btn-register">Register</a>
         </div>
     </div>
-
 </body>
 
 </html>
