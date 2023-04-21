@@ -33,32 +33,23 @@
             </div>
         </nav>
     </header>
-
     <div class="logo-container">
         <img src="/img/logo-.png" alt="Logo">
     </div>
-
     <div class="button-container">
-        <button>
-            <div>
-                <img src="/img/chainsaw.png" alt="Picture 1">
-                <p>Chainsaw</p>
-            </div>
-        </button>
-        <button>
-            <div>
-                <img src="/img/COV.png" alt="Picture 2">
-                <p>Certificate of Verification</p>
-            </div>
-        </button>
-        <button>
-            <div>
-                <img src="/img/PTPR.png" alt="Picture 3">
-                <p>Private Tree Plantation Registration</p>
-            </div>
-        </button>
+        <div class="button">
+            <img src="/img/chainsaw.png" alt="Picture 1">
+            <p>Chainsaw</p>
+        </div>
+        <div class="button">
+            <img src="/img/COV.png" alt="Picture 2">
+            <p>Certificate of Verification</p>
+        </div>
+        <div class="button">
+            <img src="/img/PTPR.png" alt="Picture 3">
+            <p>Private Tree Plantation Registration</p>
+        </div>
     </div>
-
 </body>
 
 </html>
