@@ -7,6 +7,7 @@
 :root {
   --light-green: #4caf50;
   --darkish-green: #3e8e41;
+  --hue: #e0f0df;
 }
 
 body {
@@ -33,7 +34,8 @@ body {
 }
 
 .login-form {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: rgba(224, 240, 223, 0.8);
   padding: 30px;
   border-radius: 10px;
   width: 400px;
@@ -68,6 +70,7 @@ body {
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* font-size: 0.8rem; */
 }
 
 .form-group button {
@@ -132,7 +135,7 @@ body {
   }
 
   .form-group input {
-    font-size: 16px;
+    font-size: 0.8rem;
     height: 40px;
   }
   .forgot-pass {

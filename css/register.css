@@ -127,4 +127,24 @@ body {
     width: 100%;
     padding: 50px;
   }
+  /*  Scrollbar CSS  */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #585f58 #9e9e9e;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #9e9e9e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #818181;
+    border-radius: 10px;
+  }
 }

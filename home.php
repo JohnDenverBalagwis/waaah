@@ -10,17 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ad1518180.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/home.css">
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        document.addEventListener("click", function(event) {
+            var dropdownMenu = document.getElementById("dropdown-menu");
+            if (!event.target.closest(".profile-dropdown") && dropdownMenu.classList.contains("show")) {
+                dropdownMenu.classList.remove("show");
+            }
+        });
+    </script>
 </head>
 
 <body>
     <header>
         <nav>
+            <!-- <a href="#" class="back-arrow"><i class="fas fa-arrow-left"></i></a> -->
             <div class="profile-dropdown">
-                <a href="#">
+                <a href="#" onclick="toggleDropdown()">
                     <img src="/img/profile.png" alt="Profile Picture" />
                     <i class="fas fa-angle-down"></i>
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" id="dropdown-menu">
+                    <li><a href="#">edit profile</a></li>
                     <li><a href="#">username</a></li>
                     <li><a href="#">business name</a></li>
                     <li><a href="#">owner's name</a></li>

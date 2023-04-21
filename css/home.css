@@ -4,23 +4,30 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --light-green: #4caf50;
   --darkish-green: #3e8e41;
   --white: #fff;
   --black: #000;
+  --hue: #e0f0df;
 }
+
 body {
-  /* background-image: url(); */
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url(/img/images.jpg); */
+  background-color: var(--hue);
+  /* background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat; */
   height: 100vh;
   width: 100%;
   opacity: 0.95;
   position: relative;
 }
+
 header {
   background-color: #fff;
+  /* background-color: transparent; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   height: 80px;
@@ -32,6 +39,19 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
+/*Back-Arrow*/
+/* nav i.fas.fa-arrow-left {
+  font-size: 1.5rem;
+  color: var(--darkish-green);
+  cursor: pointer;
+}
+nav li {
+  list-style: none;
+}
+nav .back-arrow {
+  margin-right: auto;
+  margin-left: 20px;
+} */
 
 .profile-dropdown {
   position: relative;
@@ -83,15 +103,18 @@ nav {
   text-decoration: none;
   font-size: 0.875;
   text-transform: capitalize;
-  transition: background-color 0.2s ease-in-out;
 }
+
 .dropdown-menu a:focus,
 .dropdown-menu a:hover {
-  /* background-color: #e1dada; */
   background-color: #4caf4f28;
 }
 
-.profile-dropdown:hover .dropdown-menu {
+.dropdown-menu {
+  display: none;
+}
+
+.show {
   display: block;
 }
 
@@ -100,6 +123,7 @@ nav {
   justify-content: center;
   margin-top: 20px;
 }
+
 .logo-container img {
   width: 250px;
   height: auto;
@@ -122,6 +146,7 @@ nav {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1);
 }
+
 .button-container .button img {
   padding: 10px;
   width: 150px;
@@ -134,9 +159,11 @@ nav {
   color: var(--white);
   font-size: 0.8rem;
   text-align: center;
-  /* font-weight: bold; */
-  /* padding-bottom: 20px; */
   text-transform: capitalize;
+}
+
+.button-container .button:active {
+  transform: scale(0.98);
 }
 
 .button-container .button:active {
@@ -155,6 +182,9 @@ nav {
     width: 50%;
     margin: 0 auto;
     display: block;
+  }
+  body {
+    height: 100%;
   }
 
   /* Adjust the size and position of the profile dropdown */
@@ -178,5 +208,26 @@ nav {
   }
   .button-container .button img {
     width: 60%;
+  }
+
+  /*  Scrollbar CSS  */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #585f58 #9e9e9e;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #9e9e9e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #818181;
+    border-radius: 10px;
   }
 }
