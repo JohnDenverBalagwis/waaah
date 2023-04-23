@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ad1518180.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="./css/home.css">
     <script>
         function toggleDropdown() {
             document.getElementById("dropdown-menu").classList.toggle("show");
@@ -34,7 +34,7 @@
                     <i class="fas fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu" id="dropdown-menu">
-                    <li><a href="#">edit profile</a></li>
+                    <li><a href="edit-profile.php">edit profile</a></li>
                     <li><a href="#">username</a></li>
                     <li><a href="#">business name</a></li>
                     <li><a href="#">owner's name</a></li>
