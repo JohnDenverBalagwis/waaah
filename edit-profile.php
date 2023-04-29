@@ -17,7 +17,7 @@
         <div class="left-profile">
             <a href="home.php" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
             <div class="profile-pic">
-                <img src="/img/profile.png" alt="Profile Picture">
+                <img src="./img/profile.png" alt="Profile Picture">
             </div>
             <ul>
                 <li><a href="edit-profile.php">Edit Profile</a><i class="fas fa-angle-right"></i></li>
@@ -27,7 +27,7 @@
         <div class="right-content">
             <div class="header">
                 <div class=" logo">
-                    <img src="/img/logo2.png" alt="Logo">
+                    <img src="./img/logo2.png" alt="Logo">
                     <h3>Republic of the Philippines<br>Department of Environmental Resources<br><span>PENRO Manrinduque</span></h3>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <div class=" middle-home">
                     <div class="upload-photo">
                         <div class="upload-profile">
-                            <img src="/img/profile-removebg-preview.png" alt="">
+                            <img src="./img/profile-removebg-preview.png" alt="">
                         </div>
                         <button id="edit-photo-btn" type="button">Edit Photo</button>
                     </div>
