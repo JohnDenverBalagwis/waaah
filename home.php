@@ -30,7 +30,7 @@
             <!-- <a href="#" class="back-arrow"><i class="fas fa-arrow-left"></i></a> -->
             <div class="profile-dropdown">
                 <a href="#" onclick="toggleDropdown()">
-                    <img src="/img/profile.png" alt="Profile Picture" />
+                    <img src="./img/profile.png" alt="Profile Picture" />
                     <i class="fas fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu" id="dropdown-menu">
@@ -48,21 +48,21 @@
         </nav>
     </header>
     <div class="logo-container">
-        <img src="/img/logo-.png" alt="Logo">
+        <img src="./img/logo-.png" alt="Logo">
     </div>
     <div class="button-container">
-        <div class="button">
-            <img src="/img/chainsaw.png" alt="Picture 1">
+        <a href="chainsaw.php" class="button">
+            <img src="./img/chainsaw.png" alt="Picture 1">
             <p>Chainsaw</p>
-        </div>
-        <div class="button">
-            <img src="/img/COV.png" alt="Picture 2">
+        </a>
+        <a href="certificate.php" class="button">
+            <img src="./img/COV.png" alt="Picture 2">
             <p>Certificate of Verification</p>
-        </div>
-        <div class="button">
-            <img src="/img/PTPR.png" alt="Picture 3">
+        </a>
+        <a href="registration.php" class="button">
+            <img src="./img/PTPR.png" alt="Picture 3">
             <p>Private Tree Plantation Registration</p>
-        </div>
+        </a>
     </div>
 </body>
 

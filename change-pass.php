@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ad1518180.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/edit-profile.css">
+    <link rel="stylesheet" href="./css/change-pass.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <div class="left-profile">
             <a href="home.php" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
             <div class="profile-pic">
-                <img src="/img/profile.png" alt="Profile Picture">
+                <img src="./img/profile.png" alt="Profile Picture">
             </div>
             <ul>
                 <li><a href="edit-profile.php">Edit Profile</a><i class="fas fa-angle-right"></i></li>
@@ -41,23 +41,26 @@
                     </div>
                 </div>
                 <div class="right-form">
-                    <h1>Profile</h1>
+                    <h1>Password</h1>
                     <form>
+                        <div class="form-group-top">
+                            <label for="password">Password:</label>
+                            <div class="password-wrapper">
+                                <div class="password-text">**********</div>
+                            </div>
+                        </div>
+                        <h4 class="label">Change Password</h4>
                         <div class="form-group">
-                            <label for="business-name">Business Name</label>
-                            <input type="text" id="business-name" name="business-name" placeholder="Business name" required>
+                            <label for="owners-name">Current Password</label>
+                            <input type="password" id="current-password" name="current-password" placeholder="Current Password" required>
                         </div>
                         <div class="form-group">
-                            <label for="owners-name">Owner's Name</label>
-                            <input type="text" id="owners-name" name="owners-name" placeholder="Owners's name" required>
+                            <label for="address">New Password</label>
+                            <input type="password" id="new-password" name="new-password" placeholder="New Password" required>
                         </div>
                         <div class="form-group">
-                            <label for="address">Address</label>
-                            <input type="text" id="address" name="address" placeholder="Address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <label for="email">Confirm New Password</label>
+                            <input type="password" id="new-password" name="new-password" placeholder="Confirm New Password" required>
                         </div>
                         <div class="form-group">
                             <button type="button">Cancel</button>

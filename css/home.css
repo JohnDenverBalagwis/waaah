@@ -141,9 +141,11 @@ nav .back-arrow {
   background-color: var(--light-green);
   margin: 0 10px;
   width: 250px;
-  height: 200px;
+  height: 210px;
   border-radius: 25px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   box-shadow: 0 4px 8px rgba(19, 19, 19, 0.1);
 }
 
@@ -153,6 +155,7 @@ nav .back-arrow {
   height: auto;
   margin: auto;
   display: block;
+  margin-top: 20px;
 }
 
 .button-container .button p {

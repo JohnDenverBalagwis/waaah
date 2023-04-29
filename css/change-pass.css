@@ -130,6 +130,8 @@ body {
   font-weight: bold;
 }
 
+/*box-container*/
+
 .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -196,6 +198,32 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.label {
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 16px;
+  padding-bottom: 3px;
+}
+
+.form-group-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-group-top label {
+  margin-right: 20px;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.password-text {
+  letter-spacing: 3px;
+  font-size: 1rem;
+  border-bottom: 1px solid black;
+}
 .right-form {
   padding: 0px 40px;
 }
@@ -207,14 +235,13 @@ body {
   justify-content: flex-end;
   margin-top: 20px;
 }
-
 .form-group label {
   display: block;
   margin-bottom: 5px;
 }
 
 .form-group input[type="text"],
-.form-group input[type="email"] {
+.form-group input[type="password"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
