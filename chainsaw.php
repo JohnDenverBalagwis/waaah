@@ -31,7 +31,7 @@
             <div class="header">
                 <div class=" logo">
                     <img src="/img/logo2.png" alt="Logo">
-                    <h3>Republic of the Philippines<br>Department of Environmental Resources<br><span>PENRO Manrinduque</span></h3>
+                    <h3>Republic of the Philippines<br>Department of Environment and Natural Resources<br><span>PENRO-Manrinduque</span></h3>
                 </div>
             </div>
             <div class="box-container">

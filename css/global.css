@@ -1,0 +1,31 @@
+* {
+  list-style: none;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xl: 1.25rem;
+  --font-size-13xl: 2rem;
+  --font-size-mini: 0.94rem;
+  --font-size-29xl: 3rem;
+  --font-size-5xl: 1.5rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-seagreen: #3b793a;
+  --color-black: #000;
+  --color-forestgreen: #4caf50;
+
+  /* Paddings */
+  --padding-9xl: 1.75rem;
+
+  /* border radiuses */
+  --br-31xl: 50px;
+}
