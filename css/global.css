@@ -9,6 +9,7 @@ body {
 :root {
   /* fonts */
   --font-inter: Inter;
+  --font-poppins: Poppins;
 
   /* font sizes */
   --font-size-xl: 1.25rem;
@@ -19,9 +20,11 @@ body {
 
   /* Colors */
   --color-white: #fff;
+  --color-green: #096406;
   --color-seagreen: #3b793a;
   --color-black: #000;
   --color-forestgreen: #4caf50;
+  --hue: #e0f0df;
 
   /* Paddings */
   --padding-9xl: 1.75rem;

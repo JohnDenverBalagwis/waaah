@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>Forestry Service</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
 </head>
 
 <body>
@@ -26,10 +27,10 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#" class="home">HOME</a></li>
-                    <li><a href="#" class="contact">CONTACT</a></li>
-                    <li><a href="#" class="about-us">ABOUT US</a></li>
-                    <li><a href="#" class="services">SERVICES</a></li>
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="#" class="contact">Contact</a></li>
+                    <li><a href="#" class="about-us">About Us</a></li>
+                    <li><a href="#" class="services">Services</a></li>
                 </ul>
             </div>
         </div>

@@ -1,3 +1,6 @@
+* {
+  font-family: var(--font-poppins);
+}
 .hero {
   position: absolute;
   top: 0;
@@ -76,8 +79,9 @@
 .nav-links a:focus,
 .nav-links a:hover {
   /* background-color: var(--color-white); */
-  color: var(--color-white);
-  border-bottom: 3px solid var(--color-white);
+  color: var(--color-green);
+  font-weight: 600;
+  /* border-bottom: 3px solid var(--color-white); */
 }
 .heading,
 .nav {
@@ -114,7 +118,7 @@
   width: 60.44rem;
   height: 13.94rem;
   font-size: 6rem;
-  color: #096406;
+  color: var(--color-green);
 }
 .btn {
   flex: 1;

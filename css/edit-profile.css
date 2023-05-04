@@ -20,6 +20,7 @@
 body {
   /* background-color: var(--hue); */
   background-color: var(--eee);
+  /* background-color: #eefbf2; */
   overflow: hidden;
   font-size: 14px;
   line-height: 1.5;
@@ -231,7 +232,7 @@ body {
   cursor: pointer;
 }
 .form-group button[type="submit"] {
-  background-color: var(--green);
+  background-color: var(--green2);
 }
 .form-group button[type="button"] {
   background-color: var(--red);
