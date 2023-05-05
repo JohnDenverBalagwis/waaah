@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/organizationlogo@2x.png" type="image/x-icon">
 </head>
 
 <body>
