@@ -1,17 +1,15 @@
 <?php
-SESSION_START();
+// Retrieve and display existing user data from the database or file
 
-// Check if currently logged in
-if (isset($_SESSION['username']) === false) {
-    header('Location: login.php?unauthorized');
-}
-
-// Logging out
-elseif (isset($_GET['logout'])) {
-    session_destroy();
-    header('Location: login.php?logout');
-}
+// Example code to display user data
+$userData = [
+    ["id" => 1, "businessName" => "ABC Company", "ownersName" => "John Doe", "address" => "123 Main St", "contactNumber" => "123-456-7890", "email" => "john@example.com"],
+    ["id" => 2, "businessName" => "XYZ Corporation", "ownersName" => "Jane Smith", "address" => "456 Elm St", "contactNumber" => "987-654-3210", "email" => "jane@example.com"],
+    // ... Add more user data as needed
+];
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +21,7 @@ elseif (isset($_GET['logout'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ad1518180.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/manage.css">
     <script>
         function toggleDropdown() {
             document.getElementById("dropdown-menu").classList.toggle("show");
@@ -61,23 +59,49 @@ elseif (isset($_GET['logout'])) {
             </div>
         </nav>
     </header>
-    <div class="logo-container">
-        <img src="./img/logo-.png" alt="Logo">
-    </div>
-    <div class="button-container">
-        <a href="chainsaw.php" class="button">
-            <img src="./img/chainsaw.png" alt="Picture 1">
-            <p>Chainsaw</p>
-        </a>
-        <a href="certificate.php" class="button">
-            <img src="./img/COV.png" alt="Picture 2">
-            <p>Certificate of Verification</p>
-        </a>
-        <a href="registration.php" class="button">
-            <img src="./img/PTPR.png" alt="Picture 3">
-            <p>Private Tree Plantation Registration</p>
-        </a>
-    </div>
-</body>
 
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>User Management</title>
+        <!-- Add your CSS stylesheets here -->
+    </head>
+
+    <body>
+        <h1>User Management</h1>
+
+        <!-- Display existing user data -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Business Name</th>
+                    <th>Owner's Name</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($userData as $user) : ?>
+                    <tr>
+                        <td><?= $user["id"]; ?></td>
+                        <td><?= $user["businessName"]; ?></td>
+                        <td><?= $user["ownersName"]; ?></td>
+                        <td><?= $user["address"]; ?></td>
+                        <td><?= $user["contactNumber"]; ?></td>
+                        <td><?= $user["email"]; ?></td>
+                        <td>
+                            <a href="edit.php?id=<?= $user["id"]; ?>">Edit</a>
+                            <a href="delete.php?id=<?= $user["id"]; ?>">Delete</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+    </body>
+
+    </html>

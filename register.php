@@ -18,7 +18,7 @@
         </div>
         <div class="registration-form">
             <h2>Register</h2>
-            <form action="/register" method="post">
+            <form action="manage-accounts.php" method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>

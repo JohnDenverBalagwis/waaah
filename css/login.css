@@ -150,3 +150,18 @@ body {
     font-size: 16px;
   }
 }
+.clickhere {
+  color: var(--light-green);
+}
+.success {
+  color: var(--light-green);
+}
+.usernameNotExist {
+  color: rgb(227, 71, 71);
+}
+.incorrectPass {
+  color: rgb(227, 71, 71);
+}
+.thanks {
+  color: var(--light-green);
+}
